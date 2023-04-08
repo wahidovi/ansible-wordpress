@@ -60,9 +60,9 @@ ansible-playbook -l wordpress -u root wp-playbook.yml
 ```
 
 **************************
-## This Script will install LAMP Stack, configure Apache2, and install wordpress.
-## vars.yml contains all the variable such as user, host, sql password, etc.  
-## apache.conf.j2 jinja template to configure apache2
-## wp-config.php.j2 for wordpress config
-## wp-playbook.yml file contains the IaC script
+##### This Script will install LAMP Stack, configure Apache2, and install wordpress.
+##### vars.yml contains all the variable such as user, host, sql password, etc.  
+##### apache.conf.j2 jinja template to configure apache2
+##### wp-config.php.j2 for wordpress config
+##### wp-playbook.yml file contains the IaC script
 
