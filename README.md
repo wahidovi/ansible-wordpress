@@ -14,7 +14,7 @@ ssh-copy-id user@target-node-ip
 
 ### ssh-to-target-wordpress-server
 ```
-	ssh user@target-node-ip
+ssh user@target-node-ip
 ```
 	
 ### disable password authentication
