@@ -2,26 +2,26 @@
 
 ### Establish Passwordless Authentication between ansible node and target node
 
-### Generate ssh-key pair
+#### Generate ssh-key pair
 ```
 ssh-keygen -t rsa -b 4096 -C "email@mail.com"
 ```
-### copy-ssh-key
+#### copy-ssh-key
 
 ```
 ssh-copy-id user@target-node-ip
 ```
 
-### ssh-to-target-wordpress-server
+#### ssh-to-target-wordpress-server
 ```
 ssh user@target-node-ip
 ```
 	
-### disable password authentication
+#### disable password authentication
 ```
 sudo nano /etc/ssh/sshd_config
 ```
-### Uncomment and Change PasswordAuthentication Yes to no
+#### Uncomment and Change PasswordAuthentication Yes to no
 ``` PasswordAuthentication no ```
 ```
 sudo systemctl reload ssh
@@ -38,7 +38,7 @@ sudo apt install ansible
 ansible –version
 ```
 
-### Add wordpress node to Ansible hosts 
+#### Add wordpress node to Ansible hosts 
 ```
 sudo nano /etc/ansible/hosts
 ```
@@ -48,7 +48,7 @@ sudo nano /etc/ansible/hosts
 
 ```
 
-### Ping wordpress node from Ansible Master node
+#### Ping wordpress node from Ansible Master node
 
 ```
 ansible wordpress -m ping
